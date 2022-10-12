@@ -1,7 +1,47 @@
-body {
-  background-color: bisque;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
 }
 
-.hello {
-  color: red;
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+}
+
+.score-container {
+  align-items: center;
+}
+
+.score-list {
+  border: solid 2px;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+li {
+  list-style: none;
+  border-bottom: solid 1px;
+}
+
+.formscore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
