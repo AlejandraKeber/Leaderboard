@@ -116,27 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_getscores__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/getscores */ \"./src/modules/getscores.js\");\n/* harmony import */ var _modules_addscore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/addscore */ \"./src/modules/addscore.js\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://webpack_base/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/modules/addscore.js":
-/*!*********************************!*\
-  !*** ./src/modules/addscore.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst addScore = async (user, score) => {\n    const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QKY1phfIna0h5X8Qb6hg/scores/', {\n        method: 'POST',\n        body: JSON.stringify({\n            user,\n            score,\n        }),\n        headers: {\n            'Content-type': 'application/json; charset=UTF-8',\n        },\n    })\n        .then((response) => response.json())\n    return data;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addScore);\n\n//# sourceURL=webpack://webpack_base/./src/modules/addscore.js?");
-
-/***/ }),
-
-/***/ "./src/modules/getscores.js":
-/*!**********************************!*\
-  !*** ./src/modules/getscores.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getScores = async () => {\n    const { value } = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QKY1phfIna0h5X8Qb6hg/scores/').then((response) => response.json());\n    return value;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getScores);\n\n//# sourceURL=webpack://webpack_base/./src/modules/getscores.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\r\n/* import getScores from './modules/getscores.js';\r\nimport displayList from './modules/score.js';\r\nimport displayList from './modules/score.js'; */\r\n\r\n/* const refresh = document.querySelector('.refresh-btn');\r\nconst submit = document.querySelector('.score-btn');\r\n\r\ndisplayList();\r\n\r\nrefresh.addEventListener('click', displayList);\r\nsubmit.addEventListener('click', (e) => {\r\n    e.preventDefault();\r\n    addScore();\r\n    displayList();\r\n}); */\r\n\r\nconst newGame = () => {\r\n    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {\r\n        method: 'POST',\r\n        body: JSON.stringify({\r\n            name: 'AlejandraKeber',\r\n        }),\r\n        headers: {\r\n            'Content-type': 'application/json; charset=UTF-8',\r\n        },\r\n    })\r\n        .then((response) => response.json())\r\n        .then((json) => console.log(json)); // To check the response from the request\r\n};\n\n//# sourceURL=webpack://webpack_base/./src/index.js?");
 
 /***/ })
 
