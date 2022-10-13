@@ -6,7 +6,6 @@ const getScores = async () => {
     .then((data) => {
       const info = data.result;
       const infoSorted = info.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
-      console.log(infoSorted);
       displayList(infoSorted);
     });
 };
