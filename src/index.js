@@ -1,15 +1,13 @@
 import './style.css';
-import getScores from './modules/getscores';
-import postScore from './modules/postscore';
+import getScores from './modules/getscores.js';
+import postScore from './modules/postscore.js';
 
 const refresh = document.querySelector('.refresh-btn');
 const submit = document.querySelector('.score-btn');
 const userName = document.querySelector('.name-input');
 const userScore = document.querySelector('.score-input');
 
-refresh.addEventListener('click', () => {
-    getScores();
-});
+getScores();
 
 submit.addEventListener('click', async (e) => {
     e.preventDefault();
@@ -18,6 +16,6 @@ submit.addEventListener('click', async (e) => {
     userScore.value = '';
 });
 
-getScores();
-
-
+refresh.addEventListener('click', () => {
+    getScores();
+});
