@@ -1,4 +1,5 @@
 import './style.css';
+/* eslint-disable import/no-unresolved */
 import getScores from './modules/getscores.js';
 import postScore from './modules/postscore.js';
 
