@@ -1,5 +1,5 @@
 const postScore = async (user, score) => {
-    const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QKY1phfIna0h5X8Qb6hg/scores/', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QKY1phfIna0h5X8Qb6hg/scores/', {
         method: 'POST',
         body: JSON.stringify({
             user,
@@ -10,7 +10,7 @@ const postScore = async (user, score) => {
         },
     })
         .then((response) => response.json())
-    return data;
+        .then((data) => data.result);
 };
 
 export default postScore;
