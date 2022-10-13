@@ -27,6 +27,11 @@ body {
   align-items: center;
 }
 
+.titlescores {
+  display: flex;
+  justify-content: space-between;
+}
+
 .score-list {
   border: solid 2px;
   margin-top: 10px;
@@ -44,4 +49,9 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+
+.refresh-btn,
+.score-btn {
+  background-color: #ffff;
 }
