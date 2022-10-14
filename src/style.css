@@ -20,16 +20,22 @@ body {
 
 .title {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   text-align: center;
+}
+
+.line {
+  border-top: 3px solid white;
+  width: 50%;
+  margin: auto;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px;
+  padding: 50px 30px;
   background-color: #0a4b78;
-  width: 90%;
+  width: 80%;
   margin: auto;
   border-radius: 5px;
 }
@@ -48,7 +54,7 @@ body {
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.5rem;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 li {
@@ -60,7 +66,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .refresh-btn,
@@ -68,5 +74,13 @@ li {
   background-color: #646970;
   border: 1px solid #787c82;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+input {
+  padding: 6px 24px;
+  border-radius: 5px;
+  background-color: #c5d9ed;
+  border: none;
 }
