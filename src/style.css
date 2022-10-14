@@ -28,12 +28,13 @@ body {
   border-top: 3px solid white;
   width: 50%;
   margin: auto;
+  padding-bottom: 30px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 50px 30px;
+  padding: 60px 30px;
   background-color: #0a4b78;
   width: 80%;
   margin: auto;
