@@ -13,14 +13,32 @@ ul {
 }
 
 body {
-  background-color: #eee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #043959;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.line {
+  border-top: 3px solid white;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px;
+  padding: 60px 30px;
+  background-color: #0a4b78;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
 }
 
 .score-container {
@@ -37,21 +55,36 @@ body {
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.5rem;
+  border-radius: 5px;
 }
 
 li {
   list-style: none;
   border-bottom: solid 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
 }
 
 .formscore {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 .refresh-btn,
 .score-btn {
-  background-color: #ffff;
+  background-color: #646970;
+  border: 1px solid #787c82;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+input {
+  padding: 6px 24px;
+  border-radius: 5px;
+  background-color: #c5d9ed;
+  border: none;
 }

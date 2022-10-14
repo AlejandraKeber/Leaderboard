@@ -12,7 +12,7 @@ getScores();
 
 submit.addEventListener('click', async (e) => {
   e.preventDefault();
-  await postScore(userName.value, parseInt(userScore.value, 10));
+  await postScore(userName.value, userScore.value);
   userName.value = '';
   userScore.value = '';
 });

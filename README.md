@@ -14,7 +14,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 
 ## Live Demo
-[Live Demo Link] not available yet
+[Live Demo Link](https://alejandrakeber.github.io/Leaderboard/dist/)
 
 ### Prerequisites
 For this project you must have node.js installed.
