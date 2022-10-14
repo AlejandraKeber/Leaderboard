@@ -13,14 +13,25 @@ ul {
 }
 
 body {
-  background-color: #eee;
+  background-color: #043959;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 40px;
+  background-color: #0a4b78;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
 }
 
 .score-container {
@@ -37,6 +48,7 @@ body {
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.5rem;
+  border-radius: 4px;
 }
 
 li {
@@ -53,5 +65,8 @@ li {
 
 .refresh-btn,
 .score-btn {
-  background-color: #ffff;
+  background-color: #646970;
+  border: 1px solid #787c82;
+  color: #fff;
+  border-radius: 2px;
 }
