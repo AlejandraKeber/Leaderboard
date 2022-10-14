@@ -11,12 +11,12 @@ const userScore = document.querySelector('.score-input');
 getScores();
 
 submit.addEventListener('click', async (e) => {
-    e.preventDefault();
-    await postScore(userName.value, userScore.value);
-    userName.value = '';
-    userScore.value = '';
+  e.preventDefault();
+  await postScore(userName.value, userScore.value);
+  userName.value = '';
+  userScore.value = '';
 });
 
 refresh.addEventListener('click', () => {
-    getScores();
+  getScores();
 });
